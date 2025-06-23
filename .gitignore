@@ -1,0 +1,8 @@
+!example.env
+.env
+
+.venv
+__pycache__
+
+image.png
+wkhtmltoimage.exe
