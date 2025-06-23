@@ -1,4 +1,5 @@
 python-dotenv
+feedparser
 psycopg2
 requests
 imgkit
