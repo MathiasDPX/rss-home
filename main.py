@@ -12,10 +12,6 @@ load_dotenv(".env")
 modules = glob.glob("modules/*.py")
 conn = DatabaseConnection()
 
-def wrap_line(text, width=80):
-    lines = re.findall(".{1,"+str(width)+"}", text)
-    return "\n".join(lines)
-
 if __name__ == "__main__":
     news = []
     all_providers = []
@@ -68,7 +64,7 @@ if __name__ == "__main__":
 
     # MARK: Render
 
-    # Discord Webhook
+    # Discord webhook
     if getenv("discord_webhook", "false").lower() != "false":
         fields = []
 
@@ -95,6 +91,7 @@ if __name__ == "__main__":
             "width": 384
         })
 
+    # Slack webhook
     if getenv("slack_webhook", "false").lower() != "false":
         fields = []
 
