@@ -5,7 +5,6 @@ import importlib
 import requests
 import imgkit
 import glob
-import re
 
 load_dotenv(".env")
 
