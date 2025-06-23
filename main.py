@@ -71,7 +71,8 @@ if __name__ == "__main__":
         for new in news:
             fields.append({
                 "name": new.title,
-                "value": new.description
+                "value": new.description,
+                "inline": True
             })
 
         data = {"embeds":[{"fields": fields}]}
